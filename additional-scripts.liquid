@@ -44,7 +44,7 @@
                 {
                     'title': {{ discount.title | json }},
                     'code': {{ discount.code | json }},
-                    'amount': {{ discount.amount | money_without_currency json }}
+                    'amount': {{ discount.amount | money_without_currency | json }}
                 },
             {%- endfor -%}
         ],
